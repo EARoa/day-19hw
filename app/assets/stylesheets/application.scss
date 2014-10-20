@@ -3,7 +3,6 @@
 @import "base/base";
 @import "neat/neat";
 
-
 // main header img
 $blue: #0000CC;
 
@@ -206,7 +205,7 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
       @include grid-item-columns($grid-item-columns);
     }
 
-    @for $i from 1 to 8 { // assign colors from $grid-item-colors list
+    @for $i from 1 to 8 {
       &:nth-child(#{$i}) {
         $background-from-list: nth($grid-item-colors, $i);
         background-color: $background-from-list;
